@@ -1,5 +1,9 @@
 import AboutsSection from "@/components/about/AboutsSection";
-import React from "react";
+
+// Add supported locales
+export async function generateStaticParams() {
+  return [{ locale: "en" }, { locale: "ar" }];
+}
 
 function AboutUs() {
   return (
